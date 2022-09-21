@@ -8,5 +8,14 @@
 </head>
 <body>
     <h1>TEST DJANGO</h1>
+ {% for cvelement in cvelements %}
+    <div>
+      <h3>{{ cvelement.nome }}</h3>
+      <p>Da {{cvelement.start }} a {{cvelement.end}}</p>
+      <hr />
+      <div>{{cvelement.riassunto}}</div>
+      <hr />
+    </div>
+ {% endfor %} 
 </body>
 </html>
