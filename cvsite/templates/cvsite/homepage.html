@@ -4,18 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Django</title>
+    
 </head>
 <body>
-    <h1>TEST DJANGO</h1>
- {% for cvelement in cvelements %}
-    <div>
-      <h3>{{ cvelement.nome }}</h3>
-      <p>Da {{cvelement.start }} a {{cvelement.end}}</p>
-      <hr />
-      <div>{{cvelement.riassunto}}</div>
-      <hr />
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Contatti</a>
+          <a class="nav-link" href="#">Progetti</a>
+          
+        </div>
+      </div>
     </div>
- {% endfor %} 
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+  <h1 style="text-align:center">Niccolò Benettini</h1>
+    <p style="text-align:center">Niccolò Benettini è uno studente di realtà aumentata,dispone di grande determinazione ed è un lavoratore instancabile</p>
+    
+  <div style="display:flex ;">
+<div style="width: 500px;margin-left: 300px;margin-right:300;">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+    <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+  </svg>
+<div class="progress">
+ <div class="progress-bar progress-bar-striped"  role="progressbar" aria-label="Default striped example" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<br>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
+</svg>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Success striped example" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<br>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-css" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z"/>
+</svg>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Info striped example" style="width: 50%" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<br>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+</svg>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-label="Warning striped example" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<br>
+<div> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wordpress" viewBox="0 0 16 16">
+  <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/>
+  <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
+  <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/>
+</svg>
+<div class="progress">
+  
+  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-label="Danger striped example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+
+
+    <img src="data:image/jpeg;base64,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" alt="IO">
+</div> 
+</div>
+</div> 
+    {% for cvelement in cvelements %}
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          
+          <div class="card-body">
+            <h5 class="card-title">{{ cvelement.nome }}</h5>
+            <p class="card-text">Da {{cvelement.start }} a {{cvelement.end}}</p> 
+            <hr />
+            <div>{{cvelement.riassunto}}</div>
+            <hr />
+          
+          </div>
+        </div>
+      </div>
+      {% endfor %} 
+
+ 
+  
+
+
 </body>
 </html>
