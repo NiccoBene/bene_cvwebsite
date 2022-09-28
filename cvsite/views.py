@@ -9,3 +9,9 @@ def cvsite(request):
 def contatti(request):
     cvelements = cvelement.objects.all()
     return render(request, 'cvsite/contatti.html', {'cvelements': cvelements})
+
+def progetti(request):
+    cvelements = cvelement.objects.all()
+    return render(request, 'cvsite/progetti.html', {'cvelements': cvelements})
+
+
