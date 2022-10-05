@@ -25,7 +25,7 @@
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
           <a class="nav-link" href="">Contatti</a>
-          <a class="nav-link" href="{% url 'progetti' %}">Progetti</a>
+          <a class="nav-link" href="{% url 'curriculum' %}">Curriculum</a>
          
         </div>
       </div>
@@ -47,7 +47,7 @@
             </a>
             <br>
             <i class="bi bi-envelope" style="font-size:50px ;"></i>
-            <h4>niccolobenettini@gmail.com</h4>
+            <a href="mailto:niccolobenettini@gmail.com"> niccolobenettini@gmail.com</a>
             
       </div>
       <div class="col">
@@ -58,6 +58,17 @@
     </div>
 </div>
 
-
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="{% url 'contatti' %}" class="nav-link px-2 text-muted">Contatti</a></li>
+      <li class="nav-item"><a href="{%url 'curriculum' %}" class="nav-link px-2 text-muted">Curriculum</a></li>
+      
+     
+    </ul>
+    <p class="text-center text-muted">&copy; 2022 Niccolò Benettini</p>
+  </footer>
+</div>
 </body>
 </html>

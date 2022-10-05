@@ -1,0 +1,26 @@
+body{background-color:  rgb(215, 215, 216);}
+.partesup{background-color: whitesmoke; 
+text-align: center;
+margin-left: 650px;
+margin-right: 650px;
+padding: 20px;
+    border: solid black ;
+border-radius: 16px;
+font-family: 'Oswald', sans-serif;}
+
+.centrofoto {border: solid aliceblue;
+    border-radius: 16px;
+    background-color: white;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 50px;
+}
+
+.immagine{
+    border: solid black;
+    border-radius: 100%;
+    
+}
+ .listalavoro{
+    font-family: 'Oswald', sans-serif;
+ }
