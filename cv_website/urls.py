@@ -17,13 +17,15 @@ from unicodedata import name
 from django.contrib import admin
 from django.urls import path
 from cvsite import views
+from django.http import Http404
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.cvsite, name='home'),
-    path('contatti/', views.contatti, name='contatti'), 
+    
     path('curriculum/', views.curriculum, name='curriculum'),
     path('index/',views.index,name='index'),
+    path('detail/<int:cvelement_id>', views.detail, name="detail"),
     
 ]

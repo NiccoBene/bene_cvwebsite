@@ -14,45 +14,21 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
 
-		<!-- animate -->
-		<link rel="stylesheet" href="css/animate.min.css">
-		<!-- bootstrap -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- font-awesome -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+
 		<!-- google font -->
 		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
 		<!-- fullpage -->
-		<link rel="stylesheet" href="css/jquery.fullPage.css">
-		<!-- custom -->
-		<link rel="stylesheet" href="css/templatemo-style.css">
+	
 		{% load static%}
 		<link rel="stylesheet" href="{% static 'cvsite/animate.min.css' %}">
 		<link rel="stylesheet" href="{% static 'cvsite/bootstrap.min.css' %}">
 		<link rel="stylesheet" href="{% static 'cvsite/font-awesome.min.css' %}">
-		<link rel="stylesheet" href="{% static 'cvsite/templatemo-style.css' %}">
+		<link rel="stylesheet" href="{% static 'cvsite/templatemo1-style.css' %}">
 		<link rel="stylesheet" href="{% static 'cvsite/jquery.fullPage.css' %}">
 
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg bg-light">
-			<div class="container-fluid">
-			  <a class="navbar-brand" href="#"></a>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-				  <a class="nav-link active" aria-current="page" href="{% url 'home'%}">Home</a>
-				  <a class="nav-link" href="{% url 'contatti' %}">Contatti</a>
-				  <a class="nav-link" href="{%url 'curriculum' %}">Curriculum</a>
-				  <a class="nav-link" href="{%url 'index' %}">testindex</a>
-				  
-				 
-				</div>
-			  </div>
-			</div>
-		  </nav>
+		
 	<div id="fullpage">
 
 		<!-- start home -->
@@ -62,7 +38,7 @@
 					<div class="col-md-2"></div>
 					<div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
 						<h3>Umiltà e determinazione</h3>
-						<h1>Niccolò Benettini</h1>
+						<h1>Niccolò Benettini </h1>
 						<h2 class="rotate">Studente &AMP; Realtà aumentata, Realtà virtuale &AMP; Programmatore</h2>
 						
 						<a href="#work" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">Skills</a>
@@ -86,7 +62,7 @@
 					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
 						<div class="media">
 							<div class="media-object media-left">
-								<i class="fa fa-laptop"></i>
+								<i class="bi bi-file-earmark-code"></i>
 							</div>
 							<div class="media-body">
 								<h3 class="media-heading">Programmatore</h3>
@@ -98,7 +74,7 @@
 					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
 						<div class="media">
 							<div class="media-object media-left">
-								<i class="fa fa-link"></i>
+								<i class="bi bi-lightbulb"></i>
 							</div>
 							<div class="media-body">
 								<h3 class="media-heading">Social Media manager</h3>
@@ -110,11 +86,11 @@
 					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
 						<div class="media">
 							<div class="media-object media-left">
-								<i class="fa fa-paper-plane"></i>
+								<i class="bi bi-headset-vr"></i>
 							</div>
 							<div class="media-body">
 								<h3 class="media-heading">Tecninco realtà aumentata &AMP; realtà virtuale</h3>
-								<p>Credits go to <a rel="nofollow" href="https://pixabay.com">Pixabay</a> and <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for images used in this free CSS website template.</p>
+								<p>Dal 2021 mi occupo di Realtà Aumentata e Virtuale, Sviluppo anche modelli 3D di rilievi con software come photoscan</p>
 							</div>
 						</div>
 					</div>
@@ -177,10 +153,12 @@
 						  </p>
 						  <div class="d-flex justify-content-between align-items-center">
 							<div class="btn-group">
+
+								<a id="rosso" href="{% url 'detail' cvelement.id %}">Esplora</a>
 							  <!-- <button
 								type="button"
 								class="btn btn-sm btn-outline-secondary"
-							  >
+							  > 
 								View
 							  </button> -->
 			  
@@ -214,7 +192,7 @@
 							<li> <a href="https://it.linkedin.com/in/niccol%C3%B2-benettini-88959822a?trk=public_profile_browsemap" class="bi bi-linkedin"></a></li>
 							<li><a href="https://it-it.facebook.com/niccolo.benettini/" class="bi bi-facebook"></a></li>
 							
-							<li><a href="https://www.instagram.com/bene_isl/" class="bi bi-instagram"></a></li>
+							<li><a href="https://www.instagram.com/bene_isl/" class="bi bi-instagram"> </a></li>
 						</ul>
 					</div>
 					<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
