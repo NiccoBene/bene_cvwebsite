@@ -24,8 +24,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.cvsite, name='home'),
     
-    path('curriculum/', views.curriculum, name='curriculum'),
-    path('index/',views.index,name='index'),
+   
+   
     path('detail/<int:cvelement_id>', views.detail, name="detail"),
     path('cv-download/', views.download_file, name="cv-download")
 ]

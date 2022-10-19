@@ -15,13 +15,9 @@ def detail(request):
     cvelements = cvelement.objects.all()
     return render(request, 'cvsite/detail.html', {'cvelements': cvelements})
 
-def curriculum(request):
-    cvelements = cvelement.objects.all()
-    return render(request, 'cvsite/curriculum.html', {'cvelements': cvelements})
 
-def index(request):
-    cvelements = cvelement.objects.all()
-    return render(request, 'cvsite/index.html', {'cvelements': cvelements})
+
+
 
 def detail(request, cvelement_id):
 
