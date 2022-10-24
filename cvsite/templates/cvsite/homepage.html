@@ -23,8 +23,15 @@
 		<link rel="stylesheet" href="{% static 'cvsite/animate.min.css' %}">
 		<link rel="stylesheet" href="{% static 'cvsite/bootstrap.min.css' %}">
 		<link rel="stylesheet" href="{% static 'cvsite/font-awesome.min.css' %}">
-		<link rel="stylesheet" href="{% static 'cvsite/templatemo1-style.css' %}">
+		<link rel="stylesheet" href="{% static 'cvsite/templatemo2-style.css' %}">
 		<link rel="stylesheet" href="{% static 'cvsite/jquery.fullPage.css' %}">
+
+
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Oswald:wght@300;400&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
 
 	</head>
 	<body>
@@ -37,8 +44,8 @@
 				<div class="row">
 					<div class="col-md-2"></div>
 					<div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
-						<h3>Umiltà e determinazione</h3>
-						<h1>Niccolò Benettini </h1>
+						
+						<h1 style="font-family: Oswald" class="glass-effect">Niccolò Benettini </h1>
 						<h2 class="rotate">Studente &AMP; Realtà aumentata, Realtà virtuale &AMP; Programmatore</h2>
 						
 						<a href="#work" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">Skills</a>
@@ -68,7 +75,7 @@
                 </div>  
                 
                 <div class="row">
-					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+					<div class="col-md-3 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
 						<div class="media">
 							<div class="media-object media-left">
 								<i class="bi bi-file-earmark-code"></i>
@@ -79,8 +86,21 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="col-md-3 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="bi bi-wordpress"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Wordpress</h3>
+								<p>Creazione di siti web con Wordpress</p>
+							</div>
+						</div>
+					</div>
+
                     
-					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+					<div class="col-md-3 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
 						<div class="media">
 							<div class="media-object media-left">
 								<i class="bi bi-lightbulb"></i>
@@ -92,7 +112,7 @@
 						</div>
 					</div>
                     
-					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+					<div class="col-md-3 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
 						<div class="media">
 							<div class="media-object media-left">
 								<i class="bi bi-headset-vr"></i>
@@ -147,9 +167,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="wow bounce">PORTFOLIO</h2>
+					<h2 class="wow bounce">ESPERIENZE PASSATE</h2>
 				</div>
-				<div style="margin: 50px;" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+				<div style="margin: 10px;" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 					{% for cvelement in cvelements %}
 					 
 					<div class="col">
